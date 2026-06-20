@@ -28,6 +28,8 @@ func _get_drag_data(_at_position):
 	if check_can_purchase(Globals.currentMap.gold):
 		visible = false
 		create_placeholder()
+		return self
+	return null
 
 func check_can_drop():
 	position = initial_pos
